@@ -1,0 +1,33 @@
+ctype html>
+<head>
+	<title>퍼센트계산기</title>
+	<style>
+		input{font-size:2em;}
+		body{font-size:1em;}
+		button{font-size: 2em;}
+	</style>
+</head>
+<body>
+	<h1 id="display">퍼센트 계산기</h1>
+	전체값<input type = "text" id="price" placeholder = "전체값 예)10000 ">
+	<br>비율<input type = "text" id="percent" placeholder = "비율 예)20">%
+	<br><button id ="action">계산</button>
+
+
+	<script> 
+       // 변수와 함수
+       // variable and function
+       action.onclick = function(){
+       	console.log("OK");
+       	var myPrice = price.value;
+       	var myPercent = percent.value;
+       	result(myPrice,myPercent);
+       }
+       
+       function result(price, percent){
+       	var result = (height - 100) * 0.9; price*(percent/100);
+       	var Text =  price + "의" percent + "%는" + result + "입니다"
+      	 display.innerHTML = Text;
+       }
+	</script>
+</body>
